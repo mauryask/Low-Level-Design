@@ -1,4 +1,4 @@
-package paymentsystem;
+package PaymentSystemExample;
 
 public class UPI implements PaymentMethod{
     private String upiId;

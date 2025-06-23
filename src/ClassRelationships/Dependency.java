@@ -1,4 +1,4 @@
-package class_relationship;
+package ClassRelationships;
 import static java.lang.System.out;
 
 class Document {

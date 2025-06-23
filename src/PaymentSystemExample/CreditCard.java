@@ -1,4 +1,4 @@
-package paymentsystem;
+package PaymentSystemExample;
 
 public class CreditCard extends Card{
     public CreditCard(String cardName, String cardNo) {

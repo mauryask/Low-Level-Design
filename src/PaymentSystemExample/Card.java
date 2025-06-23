@@ -1,4 +1,4 @@
-package paymentsystem;
+package PaymentSystemExample;
 
 public abstract class Card implements PaymentMethod {
 

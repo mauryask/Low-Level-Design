@@ -1,4 +1,4 @@
-package paymentsystem;
+package PaymentSystemExample;
 
 import java.util.HashMap;
 import java.util.Map;
