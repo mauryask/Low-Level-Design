@@ -1,4 +1,4 @@
-package inheritance;
+package class_relationship;
 
 import static java.lang.System.out;
 

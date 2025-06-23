@@ -1,4 +1,4 @@
-package inheritance;
+package class_relationship;
 
 import java.util.List;
 
