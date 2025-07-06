@@ -5,8 +5,8 @@ public class ReadOnlyFile extends File {
     //This function violating LSP
     @Override
     public void write() {
-           //Can be handles like this but not a good idea
-           throw new IllegalArgumentException("Unsupported operation!!");
+        //Can be handled like this but not a good idea
+        throw new UnsupportedOperationException("Unsupported operation!!");
     }
 
     @Override
