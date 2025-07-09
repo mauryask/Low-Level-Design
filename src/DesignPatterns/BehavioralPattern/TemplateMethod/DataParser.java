@@ -2,7 +2,8 @@ package DesignPatterns.BehavioralPattern.TemplateMethod;
 
 public abstract class DataParser {
     //Template Method: Define the steps in the algorithm
-    public final void parse() {
+    //Note: final methods cannot be overridden, and its behavior(implementation) cannot be changed
+    protected final void parse() {
         openFile();
         parseData();
         closeFile();
@@ -10,11 +11,11 @@ public abstract class DataParser {
 
     abstract void parseData();
 
-    public void openFile() {
+    protected void openFile() {
         System.out.println("Opening file..");
     }
 
-    public void closeFile() {
+    protected void closeFile() {
         System.out.println("Closing file..");
     }
 }
