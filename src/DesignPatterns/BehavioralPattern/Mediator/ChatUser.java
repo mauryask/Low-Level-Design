@@ -10,7 +10,7 @@ public class ChatUser {
     }
 
     public void sendMessage(String message) {
-        System.out.println("***** " + this.name + " sending a message ******");
+        System.out.println("******* " + this.name + " sending a message ******");
         chatMediator.sedMessage(message, this);
     }
 
