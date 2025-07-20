@@ -1,13 +1,12 @@
 package ClassRelationships;
 
-import java.util.List;
-
 import static java.lang.System.out;
 
-class Professor {
+//Contained class
+class Student {
     private String name;
 
-    public Professor(String name) {
+    public Student(String name) {
         this.name = name;
     }
 
@@ -16,32 +15,30 @@ class Professor {
     }
 }
 
+//Container class
+class College {
+    private Student student;
 
-class Department {
-    private String departmentName;
-    private List<Professor> professors;
-
-    public Department(String departmentName, List<Professor> professors) {
-        this.departmentName = departmentName;
-        this.professors = professors;
+    public void setStudent(Student student) {
+        this.student = student;
     }
 
-    public void showProfessors() {
-        out.println("Department: " + departmentName);
-        for (Professor professor : professors) {
-            out.println("Professor: " + professor.getName());
-        }
-        out.println();
+    void showStudent() {
+        out.println("College has: " + student.getName());
     }
 }
 
 public class Aggregation {
     public static void main(String[] args) {
-        Professor professor1 = new Professor("Tony Stark");
-        Professor professor2 = new Professor("Brice Banner");
-        List<Professor> professors = List.of(professor1, professor2);
-        //(Weak Aggregation) Weak 'Has-A' relationship: Here departments and professors can exist independently
-        Department department = new Department("Computer Science", professors);
-        department.showProfessors();
+        Student student = new Student("Peter Parker");
+        College college = new College();
+        college.setStudent(student);
+        college.showStudent();
     }
 }
+
+/*
+ * Type: Weak HAS-A (Loose coupling)
+ * Ownership: No class object owns another
+ * Lifecycle: Both class objects can live independently
+ * **/

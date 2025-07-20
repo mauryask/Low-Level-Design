@@ -12,29 +12,32 @@ class Teacher {
     public String getName() {
         return name;
     }
-
-    public void teach(Student student) {
-        out.println("Teacher : " + name + " teaches student: " + student.getName());
-    }
 }
 
-class Student {
-    private String name;
+class Course {
+    private Teacher teacher;
 
-    public Student(String name) {
-        this.name = name;
+    public Course(Teacher teacher) {
+        this.teacher = teacher;
     }
 
-    public String getName() {
-        return name;
+    public void display() {
+        out.println("Course taught by: " + teacher.getName());
     }
 }
 
 public class Association {
     public static void main(String[] args) {
-         Teacher teacher = new Teacher("Tony Stark");
-         Student student = new Student("Peter Parker");
-         //Association between teacher and student
-         teacher.teach(student);
+        Teacher teacher = new Teacher("Tony Stark");
+        Course course = new Course(teacher);
+        //Association between teacher and course
+        course.display();
     }
 }
+
+/*
+ * Two variants: Unidirectional and bidirectional
+ * Type: Association
+ * Ownership: No ownership between objects
+ * Lifecycle: Both objects can live independently
+ * **/

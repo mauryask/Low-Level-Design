@@ -5,42 +5,38 @@ import java.util.List;
 
 import static java.lang.System.out;
 
-class Room{
-    private String roomName;
-
-    public Room(String roomName) {
-        this.roomName = roomName;
+//Contained class
+class Engine {
+    public void start() {
+        out.println("Engine started..");
     }
-
-    public String getRoomName() {
-        return roomName;
-    }
-
 }
 
-class House{
-    private List<Room> rooms;
+//Container class
+class Car {
+    private final Engine engine;
 
-    public House(List<Room> rooms) {
-        this.rooms = rooms;
+    public Car() {
+        engine = new Engine();
     }
 
-    public void showRooms(){
-        for(Room room : rooms){
-            out.println(room.getRoomName());
-        }
+    public void drive() {
+        engine.start();
+        out.println("Driving the car..");
     }
 }
 
 
 public class Composition {
-  public static  void main(String[] args){
-      Room room1 = new Room("Store Room");
-      Room room2 = new Room("Drawing Room");
-      Room room3 = new Room("Bedroom");
-      List<Room> rooms = Arrays.asList(room1, room2, room3);
-      //Strong 'Has-A' relationship: Here rooms can't exist independently without House
-      House house = new House(rooms);
-      house.showRooms();
-  }
+    public static void main(String[] args) {
+        Car car = new Car();
+        car.drive();
+    }
 }
+
+
+/*
+ * Type: Strong HAS-A (Tight coupling)
+ * Ownership: Container owns the contained object
+ * Lifecycle: A Contained object cannot exist without a container object
+ * */
