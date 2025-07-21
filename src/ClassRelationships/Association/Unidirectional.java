@@ -1,4 +1,4 @@
-package ClassRelationships;
+package ClassRelationships.Association;
 
 import static java.lang.System.out;
 
@@ -14,6 +14,7 @@ class Teacher {
     }
 }
 
+//Course knows teacher but vice versa is not true
 class Course {
     private Teacher teacher;
 
@@ -26,7 +27,7 @@ class Course {
     }
 }
 
-public class Association {
+public class Unidirectional {
     public static void main(String[] args) {
         Teacher teacher = new Teacher("Tony Stark");
         Course course = new Course(teacher);
