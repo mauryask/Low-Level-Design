@@ -1,5 +1,7 @@
 package DesignPatterns.BehavioralPattern.Memento;
 
+//Originator: whose state needs to be saved and restored
+//It creates a memento containing its current state, and can accept a memento to restore its state
 public class TextEditor {
     private String content;
 
@@ -20,6 +22,8 @@ public class TextEditor {
 
     //Restore this state from memento
     public void restore(EditorMemento memento) {
-        this.content = memento.getContent();
+        if (memento != null) {
+            this.content = memento.getContent();
+        }
     }
 }

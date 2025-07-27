@@ -3,6 +3,7 @@ package DesignPatterns.BehavioralPattern.Observer;
 import java.util.ArrayList;
 import java.util.List;
 
+//Subject: holds the state and notifies the observers about the state changes
 public class WeatherStation implements Subject {
     private double temperature;
     private final List<Observer> observerList;

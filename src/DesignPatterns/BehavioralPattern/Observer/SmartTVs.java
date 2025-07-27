@@ -1,5 +1,6 @@
 package DesignPatterns.BehavioralPattern.Observer;
 
+//Observer: queries the subject to get the updates
 public class SmartTVs implements Observer {
     private final String deviceName;
 
