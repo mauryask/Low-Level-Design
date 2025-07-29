@@ -1,24 +1,18 @@
 package DesignPatterns.BehavioralPattern.Mediator;
 
-public class ChatUser {
-    private final String name;
-    private final ChatMediator chatMediator;
-
-    public ChatUser(String name, ChatMediator chatMediator) {
-        this.name = name;
-        this.chatMediator = chatMediator;
+//All the chat users will be colleagues of the chat room
+public class ChatUser extends User {
+    public ChatUser(String name, ChatMediator mediator) {
+        super(name, mediator);
     }
 
     public void sendMessage(String message) {
-        System.out.println("******* " + this.name + " sending a message ******");
-        chatMediator.sedMessage(message, this);
+        System.out.println("******* " + this.getName() + " sending a message ******");
+        this.mediator.sedMessage(message, this);
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void receiveMessage(String message, ChatUser sender) {
-        System.out.println(this.name + " received message: '" + message + "' from " + sender.getName());
+    @Override
+    void receiveMessage(String message, User sender) {
+        System.out.println(this.getName() + " received message: " + message + " from " + sender.getName());
     }
 }

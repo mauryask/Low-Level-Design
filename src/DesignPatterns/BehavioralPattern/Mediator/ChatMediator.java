@@ -1,6 +1,7 @@
 package DesignPatterns.BehavioralPattern.Mediator;
 
+//Mediator
 public interface ChatMediator {
-    void addUser(ChatUser chatUser);
-    void sedMessage(String message, ChatUser sender);
+    void addUser(User chatUser);
+    void sedMessage(String message, User sender);
 }
