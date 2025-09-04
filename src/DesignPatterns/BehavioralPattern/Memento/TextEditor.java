@@ -5,6 +5,10 @@ package DesignPatterns.BehavioralPattern.Memento;
 public class TextEditor {
     private String content;
 
+    public TextEditor(String content) {
+        this.content = content;
+    }
+
     //Write into text editor (Kind of setter)
     public void write(String content) {
         this.content = content;

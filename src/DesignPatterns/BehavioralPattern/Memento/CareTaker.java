@@ -10,8 +10,13 @@ public class CareTaker {
     }
 
     public void undo(TextEditor editor) {
+        if (history.isEmpty())
+            return;
+        //Remove the current state
+        history.pop();
+
+        //Restore to the previous state
         if (!history.isEmpty()) {
-            history.pop();
             editor.restore(history.peek());
         }
     }

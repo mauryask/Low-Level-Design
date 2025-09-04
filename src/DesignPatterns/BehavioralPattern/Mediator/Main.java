@@ -13,5 +13,6 @@ public class Main {
         chatRoom.addUser(bruce);
         chatRoom.addUser(steve);
         tony.sendMessage("Hey, folks!!");
+        bruce.sendMessage("Yo!! whats up!!");
     }
 }

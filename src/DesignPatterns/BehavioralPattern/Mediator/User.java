@@ -1,10 +1,10 @@
 package DesignPatterns.BehavioralPattern.Mediator;
 
-//Note: this is not part of the original program, See huis GitHub repo
-//This abstract class defines a contract that all the users must follow.
+// Note: this is not part of the original program, See his GitHub repo
+// This abstract class defines a contract that all the users must follow.
 // Enforcing consistent behavior across all users in the chat system.
 
-//Very important: this avoids code duplication in each (different) concrete user class.
+// Very important: this avoids code duplication in each (different) concrete user class.
 public abstract class User {
     private final String name;
     protected final ChatMediator mediator;
