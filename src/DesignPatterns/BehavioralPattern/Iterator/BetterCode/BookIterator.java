@@ -1,5 +1,6 @@
 package DesignPatterns.BehavioralPattern.Iterator.BetterCode;
 
+//Concrete Iterator
 public class BookIterator implements Iterator{
     private final int size;
     private final String[] books;

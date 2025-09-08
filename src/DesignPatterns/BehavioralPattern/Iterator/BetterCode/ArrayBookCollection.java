@@ -1,5 +1,6 @@
 package DesignPatterns.BehavioralPattern.Iterator.BetterCode;
 
+//Concrete Aggregate
 public class ArrayBookCollection implements BookCollection {
     private final String[] books;
     private static final int MAX_SIZE = 100;
