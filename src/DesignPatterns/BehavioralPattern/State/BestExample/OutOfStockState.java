@@ -1,7 +1,5 @@
 package DesignPatterns.BehavioralPattern.State.BestExample;
 
-import State.State;
-
 public class OutOfStockState implements State {
     private VendingMachine machine;
 

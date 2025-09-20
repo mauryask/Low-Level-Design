@@ -1,9 +1,9 @@
 package DesignPatterns.BehavioralPattern.State.BestExample;
 
 public class VendingMachine {
-    private MoneyInsertedState moneyInsertedState;
-    private OutOfStockState outOfStockState;
-    private WaitingForMoneyState waitingForMoneyState;
+    private State moneyInsertedState;
+    private State outOfStockState;
+    private State waitingForMoneyState;
     private State currentState;
 
     VendingMachine() {
@@ -13,15 +13,15 @@ public class VendingMachine {
         currentState = waitingForMoneyState;
     }
 
-    public MoneyInsertedState getMoneyInsertedState() {
+    public State getMoneyInsertedState() {
         return moneyInsertedState;
     }
 
-    public OutOfStockState getOutOfStockState() {
+    public State getOutOfStockState() {
         return outOfStockState;
     }
 
-    public WaitingForMoneyState getWaitingForMoneyState() {
+    public State getWaitingForMoneyState() {
         return waitingForMoneyState;
     }
 
