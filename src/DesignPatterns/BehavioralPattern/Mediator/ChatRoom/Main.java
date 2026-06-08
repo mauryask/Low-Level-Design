@@ -1,4 +1,4 @@
-package DesignPatterns.BehavioralPattern.Mediator;
+package DesignPatterns.BehavioralPattern.Mediator.ChatRoom;
 
 public class Main {
     public static void main(String[] args) {

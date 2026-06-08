@@ -1,4 +1,4 @@
-package DesignPatterns.BehavioralPattern.Mediator.GoodExample;
+package DesignPatterns.BehavioralPattern.Mediator.SmartHome;
 
 /**
  * Consider the example:
@@ -24,7 +24,7 @@ public class Main {
         mediator.registerDevice(blindMachine);
 
         //Trigger alarm
-        alarmClock.sendEvent("ALARM_RINGING");
+        alarmClock.sendEvent(HomeEvent.ALARM_RINGING);
     }
 }
 

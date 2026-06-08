@@ -1,4 +1,4 @@
-package DesignPatterns.BehavioralPattern.Mediator.GoodExample;
+package DesignPatterns.BehavioralPattern.Mediator.SmartHome;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ public class SmartHomeHub implements HomeMediator {
     }
 
     @Override
-    public void handleEvent(String event, Device sender) {
+    public void handleEvent(HomeEvent event, Device sender) {
         for (Device device : devices) {
             if (sender != device) {
                 device.receiveEvent(event);

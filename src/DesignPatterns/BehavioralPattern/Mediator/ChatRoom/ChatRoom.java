@@ -1,4 +1,4 @@
-package DesignPatterns.BehavioralPattern.Mediator;
+package DesignPatterns.BehavioralPattern.Mediator.ChatRoom;
 
 import java.util.ArrayList;
 import java.util.List;

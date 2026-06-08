@@ -1,4 +1,4 @@
-package DesignPatterns.BehavioralPattern.Mediator;
+package DesignPatterns.BehavioralPattern.Mediator.ChatRoom;
 
 // Note: this is not part of the original program, See his GitHub repo
 // This abstract class defines a contract that all the users must follow.

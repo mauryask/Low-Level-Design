@@ -1,4 +1,4 @@
-package DesignPatterns.BehavioralPattern.Mediator.GoodExample;
+package DesignPatterns.BehavioralPattern.Mediator.SmartHome;
 
 public class BlindMachine extends Device {
     public BlindMachine(HomeMediator mediator) {
@@ -6,12 +6,12 @@ public class BlindMachine extends Device {
     }
 
     @Override
-    public void receiveEvent(String event) {
-        if (event.equals("ALARM_RINGING"))  openBlind();
+    public void receiveEvent(HomeEvent event) {
+        if (event == HomeEvent.ALARM_RINGING) openBlind();
     }
 
     @Override
-    public void sendEvent(String event) {
+    public void sendEvent(HomeEvent event) {
         mediator.handleEvent(event, this);
     }
 

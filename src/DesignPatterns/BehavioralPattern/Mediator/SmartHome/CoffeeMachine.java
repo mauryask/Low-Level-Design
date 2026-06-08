@@ -1,4 +1,4 @@
-package DesignPatterns.BehavioralPattern.Mediator.GoodExample;
+package DesignPatterns.BehavioralPattern.Mediator.SmartHome;
 
 public class CoffeeMachine extends Device {
     public CoffeeMachine(HomeMediator mediator) {
@@ -6,12 +6,12 @@ public class CoffeeMachine extends Device {
     }
 
     @Override
-    public void receiveEvent(String event) {
-        if (event.equals("ALARM_RINGING")) brewCoffee();
+    public void receiveEvent(HomeEvent event) {
+        if (event == HomeEvent.ALARM_RINGING) brewCoffee();
     }
 
     @Override
-    public void sendEvent(String event) {
+    public void sendEvent(HomeEvent event) {
         mediator.handleEvent(event, this);
     }
 

@@ -1,4 +1,4 @@
-package DesignPatterns.BehavioralPattern.Mediator;
+package DesignPatterns.BehavioralPattern.Mediator.ChatRoom;
 
 //Mediator
 public interface ChatMediator {

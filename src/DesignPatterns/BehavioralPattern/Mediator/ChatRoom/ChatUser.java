@@ -1,4 +1,4 @@
-package DesignPatterns.BehavioralPattern.Mediator;
+package DesignPatterns.BehavioralPattern.Mediator.ChatRoom;
 
 //All the chat users will be colleagues of the chat room
 public class ChatUser extends User {
