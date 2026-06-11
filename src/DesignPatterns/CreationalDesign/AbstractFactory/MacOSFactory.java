@@ -1,13 +1,19 @@
 package DesignPatterns.CreationalDesign.AbstractFactory;
 
-public class MacOSFactory implements UIFactory{
+//Concrete factory
+public class MacOSFactory implements GUIFactory{
     @Override
     public Button createButton() {
-        return new MacOSButton();
+        return new MacButton();
     }
 
     @Override
-    public Scrollbar createScrollBar() {
-        return new MacOSScrollbar();
+    public Checkbox createCheckBox() {
+        return new MacCheckbox();
+    }
+
+    @Override
+    public Scrollbar createScrollbar() {
+        return new MacScrollbar();
     }
 }

@@ -1,22 +1,20 @@
 package DesignPatterns.CreationalDesign.AbstractFactory;
 
+// Client: The below code can be written main()  as well
 public class Application {
     private final Button button;
+    private final Checkbox checkbox;
     private final Scrollbar scrollbar;
 
-    public Application(UIFactory uiFactory) {
-        this.button = uiFactory.createButton();
-        this.scrollbar = uiFactory.createScrollBar();
+    public Application(GUIFactory factory) {
+        button = factory.createButton();
+        checkbox = factory.createCheckBox();
+        scrollbar = factory.createScrollbar();
     }
 
-    void renderUI() {
-        button.render();
-        scrollbar.scroll();
-    }
-
-    public static void main(String[] args) {
-        UIFactory windowsUiFactory = new MacOSFactory();
-        Application application = new Application(windowsUiFactory);
-        application.renderUI();
+    void paint() {
+        button.paint();
+        checkbox.paint();
+        scrollbar.paint();
     }
 }

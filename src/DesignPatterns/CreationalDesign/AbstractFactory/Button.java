@@ -1,5 +1,6 @@
 package DesignPatterns.CreationalDesign.AbstractFactory;
 
+// Abstract product
 public interface Button {
-    void render();
+    void paint();
 }

@@ -1,8 +1,8 @@
 package DesignPatterns.CreationalDesign.AbstractFactory;
 
-public class WindowsButton implements Button{
+public class MacCheckbox implements Checkbox{
     @Override
     public void paint() {
-        System.out.println("Painted windows button!!");
+        System.out.println("Painted MAC checkbox!!");
     }
 }

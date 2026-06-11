@@ -1,4 +1,4 @@
-package DesignPatterns.BehavioralPattern.State.BestExample;
+package DesignPatterns.BehavioralPattern.State.VendingMachine;
 
 public class WaitingForMoneyState implements State {
     private final VendingMachine machine;

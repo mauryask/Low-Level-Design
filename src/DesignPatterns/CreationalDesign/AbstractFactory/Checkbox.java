@@ -1,5 +1,5 @@
 package DesignPatterns.CreationalDesign.AbstractFactory;
 
-public interface Scrollbar {
+public interface Checkbox {
     void paint();
 }
