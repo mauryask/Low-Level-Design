@@ -1,32 +1,16 @@
 package DesignPatterns.CreationalDesign.Prototype;
 
-public class GamePiece implements Prototype<GamePiece> {
-    private final String color;
-    private final int position;
+import java.util.Objects;
 
-    public GamePiece(String color, int position) {
-        this.color = color;
-        this.position = position;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public int getPosition() {
-        return position;
-    }
-
-    @Override
-    public String toString() {
-        return "GamePieces{" +
-                "color='" + color + '\'' +
-                ", position=" + position +
-                '}';
+public record GamePiece(String color, int position) implements Prototype<GamePiece> {
+    // Copy constructor
+    public GamePiece(GamePiece source) {
+        // Constructor chaining (prevents writing redundant code)
+        this(Objects.requireNonNull(source, "Source can not be null at all!!").color, source.position);
     }
 
     @Override
     public GamePiece clone() {
-        return new GamePiece(this.color, this.position);
+        return new GamePiece(this);
     }
 }

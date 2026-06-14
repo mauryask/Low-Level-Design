@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GameBoard implements Prototype<GameBoard> {
-    private List<GamePiece> pieces = new ArrayList<>();
+    private final List<GamePiece> pieces = new ArrayList<>();
 
     public void addPiece(GamePiece piece) {
         pieces.add(piece);
