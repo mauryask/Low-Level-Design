@@ -1,4 +1,4 @@
-package DesignPatterns.CreationalDesign.Prototype;
+package DesignPatterns.CreationalDesign.Prototype.Game;
 
 import java.util.ArrayList;
 import java.util.List;

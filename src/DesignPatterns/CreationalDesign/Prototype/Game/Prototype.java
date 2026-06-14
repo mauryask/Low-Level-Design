@@ -1,4 +1,4 @@
-package DesignPatterns.CreationalDesign.Prototype;
+package DesignPatterns.CreationalDesign.Prototype.Game;
 
 //Generic type interface
 public interface Prototype<T> {

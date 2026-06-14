@@ -1,4 +1,4 @@
-package DesignPatterns.CreationalDesign.Prototype;
+package DesignPatterns.CreationalDesign.Prototype.Game;
 
 public class Main {
     public static void main(String[] args) {
