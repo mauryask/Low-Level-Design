@@ -1,4 +1,4 @@
-package DesignPatterns.Structural.Adapter.PaymentService;
+package DesignPatterns.Structural.Adapter;
 
 /**
  * PayPal API woith pay method but user wants it to be processPayment() method
