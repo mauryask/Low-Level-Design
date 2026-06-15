@@ -1,5 +1,5 @@
 package DesignPatterns.BehavioralPattern.Visitor;
 
-public interface Expression {
+public interface Shape {
     void accept(Visitor visitor);
 }
