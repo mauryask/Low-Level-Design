@@ -3,16 +3,7 @@ package ClassRelationships;
 import static java.lang.System.out;
 
 //Contained class
-class Student {
-    private String name;
-
-    public Student(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
+record Student(String name) {
 }
 
 //Container class
@@ -24,7 +15,7 @@ class College {
     }
 
     void showStudent() {
-        out.println("College has: " + student.getName());
+        out.println("College has: " + student.name());
     }
 }
 
@@ -41,4 +32,5 @@ public class Aggregation {
  * Type: Weak HAS-A (Loose coupling)
  * Ownership: No class object owns another
  * Lifecycle: Both class objects can live independently
+ * Here both objects created independently: Student object is passed to College
  * **/

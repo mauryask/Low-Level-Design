@@ -82,6 +82,7 @@ public class Bidirectional {
 
         // sysDesign.showStudents();
 
-        std1.showCourses();
+//        std1.showCourses();
+        java.showStudents();
     }
 }

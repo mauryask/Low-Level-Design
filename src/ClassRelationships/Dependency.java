@@ -2,33 +2,13 @@ package ClassRelationships;
 
 import static java.lang.System.out;
 
-class Document {
-    private String docName;
-    private String docContent;
-    private String docType;
-
-    public Document(String docName, String docContent, String docType) {
-        this.docName = docName;
-        this.docContent = docContent;
-        this.docType = docType;
-    }
-
-    public String getDocName() {
-        return docName;
-    }
-
-    public String getDocContent() {
-        return docContent;
-    }
-
-    public String getDocType() {
-        return docType;
-    }
+record Document(String docName, String docContent, String docType) {
 }
 
 class Printer {
+    // No permanent reference storage of Document unlike other relationships
     public void print(Document document) {
-        out.println("Printing document..\nName: " + document.getDocName() + "\nType: " + document.getDocType() + "\nContent: " + document.getDocContent());
+        out.println("Printing document..\nName: " + document.docName() + "\nType: " + document.docType() + "\nContent: " + document.docContent());
     }
 }
 
@@ -46,4 +26,5 @@ public class Dependency {
  * Type: uses-a
  * Ownership: No ownership
  * Lifecycle: Both objects can live independently
+ * It is weakest relationships out of all
  * **/

@@ -2,28 +2,19 @@ package ClassRelationships.Association;
 
 import static java.lang.System.out;
 
-class Teacher {
-    private String name;
-
-    public Teacher(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
+record Teacher(String name) {
 }
 
 //Course knows teacher but vice versa is not true
 class Course {
-    private Teacher teacher;
+    private final Teacher teacher;
 
     public Course(Teacher teacher) {
         this.teacher = teacher;
     }
 
     public void display() {
-        out.println("Course taught by: " + teacher.getName());
+        out.println("Course taught by: " + teacher.name());
     }
 }
 
@@ -41,4 +32,6 @@ public class Unidirectional {
  * Type: Association
  * Ownership: No ownership between objects
  * Lifecycle: Both objects can live independently
+ * Note: The Association and Aggregation are same at code level they differ conceptually (phycologically)
+ * The Aggregation and Composition are specialized type of Association
  * **/

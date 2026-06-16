@@ -1,8 +1,5 @@
 package ClassRelationships;
 
-import java.util.Arrays;
-import java.util.List;
-
 import static java.lang.System.out;
 
 //Contained class
