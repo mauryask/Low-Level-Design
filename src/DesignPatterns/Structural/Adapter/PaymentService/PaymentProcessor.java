@@ -1,4 +1,4 @@
-package DesignPatterns.Structural.Adapter;
+package DesignPatterns.Structural.Adapter.PaymentService;
 
 // Target interface
 public interface PaymentProcessor {

@@ -1,4 +1,4 @@
-package DesignPatterns.Structural.Adapter;
+package DesignPatterns.Structural.Adapter.PaymentService;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package DesignPatterns.Structural.Adapter;
+package DesignPatterns.Structural.Adapter.PaymentService;
 
 // Concrete adapter
 public class PaypalToPaymentAdapter implements PaymentProcessor {
