@@ -15,6 +15,6 @@ public class TreeType {
     }
 
     public void display(int x, int y) {
-        System.out.printf("Displaying [%s] tree of color [%s] with texture [%s] at location (%s, %s)", name, color, Arrays.toString(textureMesh), x, y);
+        System.out.printf("Displaying [%s] tree of color [%s] with texture [%s] at location (%s, %s)%n", name, color, Arrays.toString(textureMesh), x, y);
     }
 }
