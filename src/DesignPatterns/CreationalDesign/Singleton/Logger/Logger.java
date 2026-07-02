@@ -19,7 +19,7 @@ package DesignPatterns.CreationalDesign.Singleton.Logger;
 //}
 
 /*
- * Approach02: Static Inner class (Best approach)
+ * Approach02: Static Inner class (Best approach: aks. BillPughSingleton)
  * Threadsafe by default as class loading is by default threadsafe in its implementation
  * The static inner class will be loaded only once by JVM and Logger instance will be created only once
  * (When first time getInstance() is called)
