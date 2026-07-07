@@ -1,7 +1,13 @@
 package DesignPatterns.BehavioralPattern.State.VendingMachine;
 
-public interface State {
-    void pressButton();
+public abstract class State {
+    protected VendingMachine vendingMachine;
 
-    void insertMoney();
+    public State(VendingMachine vendingMachine) {
+        this.vendingMachine = vendingMachine;
+    }
+
+    public abstract void pressButton();
+
+    public abstract void insertMoney();
 }

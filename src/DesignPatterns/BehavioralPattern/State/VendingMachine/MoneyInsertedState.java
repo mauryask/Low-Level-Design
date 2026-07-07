@@ -1,16 +1,14 @@
 package DesignPatterns.BehavioralPattern.State.VendingMachine;
 
-public class MoneyInsertedState implements State {
-    private final VendingMachine machine;
-
-    MoneyInsertedState(VendingMachine machine) {
-        this.machine = machine;
+public class MoneyInsertedState extends State {
+    MoneyInsertedState(VendingMachine vendingMachine) {
+       super(vendingMachine);
     }
 
     @Override
     public void pressButton() {
         System.out.println("Dispensing item..");
-        machine.setState(machine.getWaitingForMoneyState());
+        vendingMachine.setState(vendingMachine.getWaitingForMoneyState());
     }
 
     @Override

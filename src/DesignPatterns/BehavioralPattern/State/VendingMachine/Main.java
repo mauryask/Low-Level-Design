@@ -2,7 +2,7 @@ package DesignPatterns.BehavioralPattern.State.VendingMachine;
 
 public class Main {
     public static void main(String[] args) {
-        // Here machine object changing its behaviour when the insert state of the object changes
+        // Here machine object changing its behavior when the insert state of the object changes
         VendingMachine machine = new VendingMachine();
         machine.pressButton();
         machine.insertMoney();

@@ -1,9 +1,9 @@
 package DesignPatterns.BehavioralPattern.State.VendingMachine;
 
 public class VendingMachine {
-    private State moneyInsertedState;
-    private State outOfStockState;
-    private State waitingForMoneyState;
+    private final State moneyInsertedState;
+    private final State outOfStockState;
+    private final State waitingForMoneyState;
     private State currentState;
 
     VendingMachine() {

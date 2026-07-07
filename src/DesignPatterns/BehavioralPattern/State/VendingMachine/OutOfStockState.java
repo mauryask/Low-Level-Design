@@ -1,10 +1,8 @@
 package DesignPatterns.BehavioralPattern.State.VendingMachine;
 
-public class OutOfStockState implements State {
-    private VendingMachine machine;
-
+public class OutOfStockState extends State {
     OutOfStockState(VendingMachine machine) {
-        this.machine = machine;
+        super(machine);
     }
 
     @Override
