@@ -1,5 +1,6 @@
 package DesignPatterns.BehavioralPattern.Interpreter;
 
+// Terminal expression
 public class NumberExpression implements Expression{
     private final int number;
 

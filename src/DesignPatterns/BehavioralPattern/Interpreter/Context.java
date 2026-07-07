@@ -2,6 +2,7 @@ package DesignPatterns.BehavioralPattern.Interpreter;
 
 import java.util.Map;
 
+// The class contains global information like variables values
 public class Context {
     private final Map<String, Integer> map;
 

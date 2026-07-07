@@ -1,18 +1,19 @@
 package DesignPatterns.BehavioralPattern.Iterator;
 
-import java.util.Iterator;
-
 public class Main {
     public static void main(String[] args) {
-//        BookCollection bookCollection = new BookCollection();
-        BookCollectionV1 bookCollection = new BookCollectionV1();
-        bookCollection.addBook(new Book("Hunger Games"));
-        bookCollection.addBook(new Book("Harry Potter"));
-        bookCollection.addBook(new Book("A Song of Ice and Fire"));
-        Iterator<Book> itr = bookCollection.iterator();
+        ArrayBookCollection collection = new ArrayBookCollection();
+        collection.addBook("Hary Porter");
+        collection.addBook("Song of Ice and Fire");
+        collection.addBook("Hunger Games");
+        collection.addBook("Gunahon Ka Devta");
+        collection.addBook("Gaban");
+        collection.addBook("Godan");
+
+        Iterator itr = collection.createIterator();
 
         while (itr.hasNext()) {
-            System.out.println(itr.next().getBookTitle());
+            System.out.println(itr.next());
         }
     }
 }

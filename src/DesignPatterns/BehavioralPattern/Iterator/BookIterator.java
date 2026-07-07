@@ -1,4 +1,4 @@
-package DesignPatterns.BehavioralPattern.Iterator.BetterCode;
+package DesignPatterns.BehavioralPattern.Iterator;
 
 //Concrete Iterator
 public class BookIterator implements Iterator{

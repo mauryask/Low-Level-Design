@@ -1,5 +1,6 @@
 package DesignPatterns.BehavioralPattern.Interpreter;
 
+// Terminal expression
 public class VariableExpression implements Expression {
     private final String variable;
 

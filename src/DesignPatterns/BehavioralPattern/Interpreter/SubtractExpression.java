@@ -1,5 +1,6 @@
 package DesignPatterns.BehavioralPattern.Interpreter;
 
+// Non-terminal expression
 public class SubtractExpression implements Expression {
     private final Expression left, right;
 

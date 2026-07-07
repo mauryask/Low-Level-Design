@@ -1,10 +1,11 @@
 package DesignPatterns.BehavioralPattern.Interpreter;
 
+// Non-terminal expression
 public class AddExpression implements Expression {
     private final Expression left, right;
 
     public AddExpression(Expression left, Expression right) {
-        this.left = left;
+         this.left = left;
         this.right = right;
     }
 

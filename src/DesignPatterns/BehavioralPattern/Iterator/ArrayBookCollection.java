@@ -1,4 +1,4 @@
-package DesignPatterns.BehavioralPattern.Iterator.BetterCode;
+package DesignPatterns.BehavioralPattern.Iterator;
 
 //Concrete Aggregate
 public class ArrayBookCollection implements BookCollection {
