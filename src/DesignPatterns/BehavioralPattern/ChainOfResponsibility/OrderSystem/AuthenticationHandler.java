@@ -1,4 +1,4 @@
-package DesignPatterns.BehavioralPattern.ChainOfResponsibility.GoodExample;
+package DesignPatterns.BehavioralPattern.ChainOfResponsibility.OrderSystem;
 /**
  * Note: The private members of the base class are not accessible inside the child class
  * But they are inherited (always present) inside the child class
@@ -18,4 +18,16 @@ public class AuthenticationHandler extends Handler {
     }
 }
 
+
+/*
+    public Handler setNext(Handler next){
+        this.next = next;
+        return next;
+    }
+
+    protected void checkNext(Request request){
+        if(next != null)
+            next.handle(request);
+    }
+**/
 

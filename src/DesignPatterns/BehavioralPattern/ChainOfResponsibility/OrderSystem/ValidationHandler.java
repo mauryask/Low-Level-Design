@@ -1,4 +1,4 @@
-package DesignPatterns.BehavioralPattern.ChainOfResponsibility.GoodExample;
+package DesignPatterns.BehavioralPattern.ChainOfResponsibility.OrderSystem;
 
 public class ValidationHandler extends Handler{
     @Override

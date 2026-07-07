@@ -1,4 +1,4 @@
-package DesignPatterns.BehavioralPattern.ChainOfResponsibility.GoodExample;
+package DesignPatterns.BehavioralPattern.ChainOfResponsibility.OrderSystem;
 
 /**
  * Consider a case where user places an order in an online ordering app
@@ -6,7 +6,7 @@ package DesignPatterns.BehavioralPattern.ChainOfResponsibility.GoodExample;
  * 1. Authentication: Whether user is logged in or not
  * 2. Authorization: User is authorized to make an order
  * 3. Validation: The item ordered is in stock?
- *  If all criteria met then order can be placed
+ * If all criteria met then order can be placed
  * */
 
 public class Main {
